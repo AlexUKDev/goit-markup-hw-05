@@ -460,8 +460,6 @@ ul {
   font: inherit;
   width: 20px;
   height: 20px;
-
-  fill: inherit;
 }
 .social-bg-wrap:hover,
 .social-bg-wrap:focus,
@@ -506,12 +504,7 @@ ul {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
-.customers-icons {
-  fill: inherit;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 /* Footer section styles */
 .footer-section {
   padding-top: 60px;
@@ -647,7 +640,7 @@ ul {
   cursor: pointer;
   height: 38px;
 
-  transition-property: color, background-color;
+  transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
