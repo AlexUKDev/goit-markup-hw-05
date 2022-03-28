@@ -446,8 +446,6 @@ ul {
   height: 44px;
   width: 44px;
 
-  fill: var(--default-social-icon-color);
-
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -460,15 +458,23 @@ ul {
   font: inherit;
   width: 20px;
   height: 20px;
+
+  fill: var(--default-social-icon-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-bg-wrap:hover,
 .social-bg-wrap:focus,
 .social-bg-wrap.footer:hover,
 .social-bg-wrap.footer:focus {
   background-color: var(--accent-color);
+}
+.social-bg-wrap:hover .social-icons,
+.social-bg-wrap:focus .social-icons {
   fill: var(--primary-white-color);
 }
-
 /* Costomers section styles */
 .customers-section {
   padding-top: 94px;
